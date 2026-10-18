@@ -8,11 +8,11 @@ const body = Manrope({ subsets: ["latin"], variable: "--font-body", display: "sw
 const mono = IBM_Plex_Mono({ subsets: ["latin"], weight: ["400", "500"], variable: "--font-mono", display: "swap" });
 
 export const metadata: Metadata = {
-  title: "THE CATACLYSM — OxCode",
+  title: "THE CATACLYSM — OxCode × Multimedia Club",
   description:
-    "THE CATACLYSM is an inter-college Capture the Flag competition by OxCode. 19–20 November 2026 at Navarang Auditorium, Naipunnya Institute of Management and Information Technology.",
+    "THE CATACLYSM is an inter-college Capture the Flag competition by OxCode and Multimedia Club. 19–20 November 2026 at Navarang Auditorium, Naipunnya Institute of Management and Information Technology.",
   applicationName: eventConfig.name,
-  openGraph: { title: "THE CATACLYSM", description: "A 16-hour inter-college CTF by OxCode.", type: "website" },
+  openGraph: { title: "THE CATACLYSM", description: "A 16-hour inter-college CTF by OxCode × Multimedia Club.", type: "website" },
 };
 
 export const viewport: Viewport = { themeColor: "#050706", width: "device-width", initialScale: 1 };

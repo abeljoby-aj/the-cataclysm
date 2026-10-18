@@ -10,7 +10,7 @@ export default function RegistrationSection() {
   const options = [eventConfig.teamSizeMin, eventConfig.teamSizeMax];
 
   return (
-    <section id="register" className="section register" aria-labelledby="register-title">
+    <section id="register" className="section register" data-mark="DOOM" aria-labelledby="register-title">
       <Reveal className="register-card">
         <p className="mono eyebrow"><span className="dot" aria-hidden="true" /> 05 / Registration</p>
         <h2 id="register-title">Enter the breach</h2>

@@ -5,7 +5,8 @@ export default function Navigation() {
   return (
     <header className="nav">
       <a className="nav-brand mono" href="#top" aria-label={`${eventConfig.name} — top`}>
-        <Image src={eventConfig.logo} alt="" width={28} height={28} className="nav-logo" /> <span className="brand-text">CATACLYSM</span>
+        <Image src={eventConfig.logo} alt="" width={28} height={28} className="nav-logo" />
+        <Image src={eventConfig.multimediaLogo} alt="" width={28} height={28} className="nav-logo mm-logo" /> <span className="brand-text">CATACLYSM</span>
       </a>
       <nav aria-label="Primary">
         <ul>

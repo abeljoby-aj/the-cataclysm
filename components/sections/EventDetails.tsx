@@ -6,7 +6,7 @@ import { endDate, formatLongDate, formatTime, startDate } from "@/lib/time";
 export default function EventDetails() {
   const ticks = Array.from({ length: 17 }, (_, i) => (17 + i) % 24);
   return (
-    <section id="details" className="section details" aria-labelledby="details-title">
+    <section id="details" className="section details" data-mark="DOOMSDAY" aria-labelledby="details-title">
       <Reveal className="section-head">
         <p className="mono eyebrow"><span className="dot" aria-hidden="true" /> 03 / Event details</p>
         <h2 id="details-title">Sixteen hours. One night.</h2>
@@ -29,8 +29,7 @@ export default function EventDetails() {
             <div><dt className="mono">Duration</dt><dd>{eventConfig.durationHours} hours</dd></div>
             <div><dt className="mono">Venue</dt><dd>{eventConfig.venue}<br /><span className="muted">{eventConfig.institution}</span></dd></div>
             <div><dt className="mono">Prize pool</dt><dd className="hl">{eventConfig.prizePool.display}</dd></div>
-            <div><dt className="mono">Scale</dt><dd>Approximately {eventConfig.expectedTeams} teams</dd></div>
-            <div><dt className="mono">Team size</dt><dd>{eventConfig.teamSizeMin} or {eventConfig.teamSizeMax} members</dd></div>
+            <div><dt className="mono">Scale</dt><dd>Approximately {eventConfig.expectedTeams} teams<br />{eventConfig.teamSizeMin} or {eventConfig.teamSizeMax} members each</dd></div>
           </dl>
           <Countdown />
         </div>

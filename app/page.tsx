@@ -8,6 +8,7 @@ import Schedule from "@/components/sections/Schedule";
 import Venue from "@/components/sections/Venue";
 import Contact from "@/components/sections/Contact";
 import Footer from "@/components/sections/Footer";
+import Ticker from "@/components/sections/Ticker";
 
 export default function Page() {
   return (
@@ -16,6 +17,7 @@ export default function Page() {
       <Navigation />
       <main id="main">
         <OpeningSequence />
+        <Ticker />
         <ChallengeDomains />
         <PrizePool />
         <EventDetails />

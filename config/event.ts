@@ -6,7 +6,9 @@ export interface ChallengeDomain {
 
 export const eventConfig = {
   name: "THE CATACLYSM",
-  organizer: "OxCode",
+  organizer: "OxCode × Multimedia Club",
+  theme: "Avengers: Doomsday",
+  multimediaLogo: "/assets/branding/multimedia-logo.jpg",
   timezone: "Asia/Kolkata",
   startTime: "2026-11-19T17:00:00+05:30",
   endTime: "2026-11-20T09:00:00+05:30",
@@ -21,7 +23,7 @@ export const eventConfig = {
   prizePool: { amount: 25000, display: "₹25,000", short: "25K" },
   instagramUrl: "https://www.instagram.com/ox.c0de/",
   logo: "/assets/branding/oxcode-logo.png",
-  copyright: "2026 OxCode Club NIMIT. All rights reserved.",
+  copyright: "2026 OxCode Club × Multimedia Club NIMIT. All rights reserved.",
   map: {
     embedUrl:
       "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d454.39433312073885!2d76.37294636560577!3d10.246737924184611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1792260897017!5m2!1sen!2sin",
@@ -47,6 +49,7 @@ export const schedule: readonly ScheduleItem[] = [
 export const contacts = [
   { role: "Club President", name: "Rinson Joy", phone: "+91 9746947694" },
   { role: "Tech Lead", name: "Abel Joby", phone: "+91 8891882434" },
+  { role: "College Secretary", name: "Anwin Biju", phone: "+91 7994447644" },
 ] as const;
 
 // Tentative: shown as expected domains, never as a final list.

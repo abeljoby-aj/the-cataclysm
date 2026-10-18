@@ -103,7 +103,7 @@ const visuals: Record<string, () => React.ReactElement> = {
 
 export default function ChallengeDomains() {
   return (
-    <section id="domains" className="section domains" aria-labelledby="domains-title">
+    <section id="domains" className="section domains" data-mark="BREACH" aria-labelledby="domains-title">
       <Reveal className="section-head">
         <p className="mono eyebrow"><span className="dot" aria-hidden="true" /> 01 / Expected challenge domains</p>
         <h2 id="domains-title">What you may be up against</h2>
