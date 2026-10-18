@@ -170,7 +170,11 @@ ul { list-style: none; }
 .map-link { display: inline-block; margin-top: 1rem; color: var(--emerald); }
 
 /* Contact */
-.contact-grid { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); max-width: 64rem; }
+.contact-grid { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); max-width: 72rem; }
+.contact-grid li { min-width: 0; }
+.contact-grid h3 { overflow-wrap: anywhere; }
+@media (max-width: 1100px) { .contact-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .contact-grid { grid-template-columns: 1fr; } }
 .contact-grid li { background: var(--void); padding: 1.4rem; display: grid; gap: 0.3rem; }
 .contact-grid h3 { font-family: var(--font-display), sans-serif; font-size: 1.4rem; }
 .contact-grid a { color: var(--emerald); font-family: var(--font-mono), monospace; }
