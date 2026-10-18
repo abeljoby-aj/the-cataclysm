@@ -44,7 +44,7 @@ export default function OpeningSequence() {
       <div className="hero-copy">
         <p className="mono eyebrow">
           <Image src={eventConfig.logo} alt="" width={26} height={26} className="eyebrow-logo" />
-          <Image src={eventConfig.multimediaLogo} alt="" width={26} height={26} className="eyebrow-logo mm-logo" /> {eventConfig.organizer} present
+          <Image src={eventConfig.multimediaLogo} alt="" width={26} height={26} className="eyebrow-logo mm-logo" /> {eventConfig.organizer} presents
         </p>
         <h1 id="title" className="title" aria-label={eventConfig.name}>
           {TITLE_WORDS.map((word) => (

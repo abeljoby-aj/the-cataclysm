@@ -199,10 +199,11 @@ ul { list-style: none; }
 .ticker-row i { display: inline-block; width: 0.45rem; height: 0.45rem; margin: 0 1.6rem; background: var(--emerald); box-shadow: 0 0 8px var(--emerald); transform: rotate(45deg); }
 @keyframes ticker { to { transform: translateX(-50%); } }
 
-.sched-layout { display: grid; grid-template-columns: minmax(0, 46rem) minmax(0, 22rem); gap: clamp(2rem, 6vw, 6rem); align-items: center; }
-.briefing { border: 1px solid var(--line); padding: 1.6rem; background: rgba(8, 12, 10, 0.7); display: grid; gap: 0.5rem; justify-items: start; }
+.sched-layout { display: grid; grid-template-columns: minmax(0, 46rem) minmax(0, 26rem); gap: clamp(2rem, 6vw, 6rem); align-items: center; }
+.briefing { border: 1px solid var(--line); padding: 1.6rem; background: rgba(8, 12, 10, 0.7); display: grid; gap: 0.5rem; justify-items: start; min-width: 0; overflow: hidden; }
+.briefing > * { max-width: 100%; overflow-wrap: anywhere; }
 .briefing .mono { color: var(--emerald); }
-.briefing-big { font-family: var(--font-display), sans-serif; font-weight: 800; font-size: clamp(1.8rem, 3.4vw, 2.6rem); line-height: 1; }
+.briefing-big { font-family: var(--font-display), sans-serif; font-weight: 800; font-size: clamp(1.3rem, 2vw, 1.7rem); line-height: 1.1; }
 .briefing-art { width: 9rem; height: 9rem; margin-bottom: 0.6rem; }
 .b-ring { fill: none; stroke: var(--emerald); stroke-width: 0.6; opacity: 0.7; }
 .b-core { fill: var(--emerald); filter: drop-shadow(0 0 6px var(--emerald)); }
@@ -227,7 +228,26 @@ ul { list-style: none; }
   .sched li { grid-template-columns: 5.5rem 2.5rem 1fr; }
   .sched-time { white-space: nowrap; }
   .sched-time b { font-size: 1rem; }
-  .domain, .domain-rev, .domain-osint, .domain-forensics, .domain-misc { min-height: 19rem; }
+  .domain, .domain-rev, .domain-osint, .domain-forensics, .domain-misc {   min-height: 16.5rem; }
+  .section { padding-block: 2.75rem; }
+  .section-head { margin-bottom: 1.5rem; }
+  .section h2 { margin: 0.4rem 0; }
+  .prize { padding-block: 2.25rem; }
+  .big-16 { font-size: 5rem; }
+  .details-body { gap: 1rem; }
+  .facts, .timeline { margin-bottom: 1.2rem; }
+  .sched li { padding: 0.55rem 0; }
+  .sched-layout { gap: 1.5rem; }
+  .briefing { padding: 1.1rem; }
+  .briefing-art { width: 5.5rem; height: 5.5rem; }
+  .register-card { padding: 1.3rem; }
+  .venue-grid { gap: 1.2rem; }
+  .map-frame { aspect-ratio: 16 / 10; }
+  .venue-notes { margin-top: 0.9rem; }
+  .contact-grid li { padding: 1rem; }
+  .footer { padding-block: 1.8rem; }
+  .footer-logo img, .footer-mm { height: 4.5rem; }
+  .hero { padding-bottom: 2.5rem; }
   .seg { width: 100%; }
   .seg button { flex: 1; padding: 0.7rem 0.4rem; white-space: nowrap; }
   .hero { align-items: flex-end; padding-top: 5rem; }
