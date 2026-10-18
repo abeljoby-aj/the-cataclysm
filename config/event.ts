@@ -50,7 +50,7 @@ export const contacts = [
   { role: "Club President", name: "Rinson Joy", phone: "+91 9746947694" },
   { role: "Tech Lead", name: "Abel Joby", phone: "+91 8891882434" },
   { role: "College Secretary", name: "Anwin Biju", phone: "+91 7994447644" },
-  { role: "Faculty Coordinator", name: "Mrs. Chinchu", phone: "+91 9605391164" },
+  { role: "Faculty Coordinator", name: "Mrs. Chinchu Joseph", phone: "+91 9605391164" },
 ] as const;
 
 // Tentative: shown as expected domains, never as a final list.
