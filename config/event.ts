@@ -22,7 +22,7 @@ export const eventConfig = {
   registrationUrl: "https://konfhub.com/the-cataclysm",
   prizePool: { amount: 25000, display: "₹25,000", short: "25K" },
   instagramUrl: "https://www.instagram.com/ox.c0de/",
-  logo: "/assets/branding/oxcode-logo.png",
+  logo: "/assets/branding/oxcode-logo.jpg",
   copyright: "2026 OxCode Club × Multimedia Club NIMIT. All rights reserved.",
   map: {
     embedUrl:
@@ -45,6 +45,16 @@ export const schedule: readonly ScheduleItem[] = [
   { time: "9:00 AM", day: "20 Nov", title: "Event ends", note: "Final submissions close." },
   { time: "9:30 AM", day: "20 Nov", title: "Prize distribution & closing ceremony", note: "Winners are announced." },
 ];
+
+export const faqs = [
+  { q: "Are meals included?", a: "Yes. Meals are included with registration during the competition." },
+  { q: "Is it open to all departments?", a: "Yes! Students from any department or academic background can participate." },
+  { q: "How long is the competition?", a: "CATACLYSM is a 16-hour CTF competition." },
+  { q: "Is spot registration available?", a: "No. Registration must be completed before the deadline." },
+  { q: "Who can participate?", a: "Everyone! Students from different institutions and academic backgrounds are welcome." },
+  { q: "Can gap-year students participate?", a: "Yes! Gap-year students and those studying through other agencies or courses can participate." },
+  { q: "Do I need cybersecurity experience?", a: "Not at all! Participants of all skill levels are welcome to learn, solve, and compete." },
+] as const;
 
 export const contacts = [
   { role: "Club President", name: "Rinson Joy", phone: "+91 9746947694" },

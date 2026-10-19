@@ -6,6 +6,7 @@ import RegistrationSection from "@/components/sections/RegistrationSection";
 import PrizePool from "@/components/sections/PrizePool";
 import Schedule from "@/components/sections/Schedule";
 import Venue from "@/components/sections/Venue";
+import Faq from "@/components/sections/Faq";
 import Contact from "@/components/sections/Contact";
 import Footer from "@/components/sections/Footer";
 import Ticker from "@/components/sections/Ticker";
@@ -24,6 +25,7 @@ export default function Page() {
         <Schedule />
         <RegistrationSection />
         <Venue />
+        <Faq />
         <Contact />
       </main>
       <Footer />

@@ -5,7 +5,7 @@ export default function Contact() {
   return (
     <section id="contact" className="section contact" data-mark="ASSEMBLE" aria-labelledby="contact-title">
       <Reveal className="section-head">
-        <p className="mono eyebrow"><span className="dot" aria-hidden="true" /> 07 / Contact us</p>
+        <p className="mono eyebrow"><span className="dot" aria-hidden="true" /> 08 / Contact us</p>
         <h2 id="contact-title">Questions? Reach the team.</h2>
       </Reveal>
       <Reveal>
