@@ -1,9 +1,11 @@
+import { eventConfig } from "@/config/event";
+
 const LINES = [
   "Avengers: Doomsday",
   "The Cataclysm",
   "OxCode × Multimedia Club",
   "Earth's mightiest hackers assemble",
-  "₹25,000 prize pool",
+  `${eventConfig.prizePool.display} prize pool`,
   "Doom is coming",
   "16 hours · one night",
 ];

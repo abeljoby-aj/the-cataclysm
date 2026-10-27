@@ -49,6 +49,8 @@ export const schedule: readonly ScheduleItem[] = [
 export const faqs = [
   { q: "Are meals included?", a: "Yes. Meals are included with registration during the competition." },
   { q: "Is it open to all departments?", a: "Yes! Students from any department or academic background can participate." },
+  { q: "What is the registration deadline?", a: "The registration deadline is 12 Nov 2026." },
+  { q: "What is the prize pool?", a: "The prize pool is ₹50,000." },
   { q: "How long is the competition?", a: "CATACLYSM is a 16-hour CTF competition." },
   { q: "Is spot registration available?", a: "No. Registration must be completed before the deadline." },
   { q: "Who can participate?", a: "Everyone! Students from different institutions and academic backgrounds are welcome." },

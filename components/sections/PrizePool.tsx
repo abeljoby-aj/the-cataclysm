@@ -3,7 +3,7 @@ import { eventConfig } from "@/config/event";
 
 export default function PrizePool() {
   return (
-    <section id="prize" className="section prize" data-mark="25K" aria-labelledby="prize-title">
+    <section id="prize" className="section prize" data-mark={eventConfig.prizePool.short} aria-labelledby="prize-title">
       <Reveal className="prize-inner">
         <p className="mono eyebrow"><span className="dot" aria-hidden="true" /> 02 / Prize pool</p>
         <h2 id="prize-title" className="sr-only">Prize pool</h2>
