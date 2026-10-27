@@ -20,7 +20,7 @@ export const eventConfig = {
   participantFee: 400,
   expectedTeams: 50,
   registrationUrl: "https://konfhub.com/the-cataclysm",
-  prizePool: { amount: 25000, display: "₹25,000", short: "25K" },
+  prizePool: { amount: 50000, display: "₹50,000", short: "50K" },
   instagramUrl: "https://www.instagram.com/ox.c0de/",
   logo: "/assets/branding/oxcode-logo.jpg",
   copyright: "2026 OxCode Club × Multimedia Club NIMIT. All rights reserved.",
