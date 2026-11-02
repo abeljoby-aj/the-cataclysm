@@ -8,7 +8,7 @@ export default function EventDetails() {
   return (
     <section id="details" className="section details" data-mark="DOOMSDAY" aria-labelledby="details-title">
       <Reveal className="section-head">
-        <p className="mono eyebrow"><span className="dot" aria-hidden="true" /> 03 / Event details</p>
+        <p className="mono eyebrow"><span className="dot" aria-hidden="true" /> 04 / Event details</p>
         <h2 id="details-title">Sixteen hours. One night.</h2>
       </Reveal>
 
@@ -28,7 +28,7 @@ export default function EventDetails() {
             <div><dt className="mono">End</dt><dd>{formatLongDate(endDate)}<br />{formatTime(endDate)}</dd></div>
             <div><dt className="mono">Duration</dt><dd>{eventConfig.durationHours} hours</dd></div>
             <div><dt className="mono">Venue</dt><dd>{eventConfig.venue}<br /><span className="muted">{eventConfig.institution}</span></dd></div>
-            <div><dt className="mono">Prize pool</dt><dd className="hl">{eventConfig.prizePool.display}</dd></div>
+            <div><dt className="mono">Prizes & rewards</dt><dd><span className="hl">{eventConfig.prizePool.display} cash</span><br /><span className="muted">+ {eventConfig.sponsorRewards.short} in additional rewards (estimated)</span></dd></div>
             <div><dt className="mono">Scale</dt><dd>Approximately {eventConfig.expectedTeams} teams<br />{eventConfig.teamSizeMin} or {eventConfig.teamSizeMax} members each</dd></div>
           </dl>
           <Countdown />

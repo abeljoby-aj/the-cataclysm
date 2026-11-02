@@ -3,3 +3,7 @@ node_modules
 out
 *.tsbuildinfo
 next-env.d.ts
+playwright-report/
+test-results/
+blob-report/
+debug.log

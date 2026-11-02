@@ -5,7 +5,7 @@ const LINES = [
   "The Cataclysm",
   "OxCode × Multimedia Club",
   "Earth's mightiest hackers assemble",
-  `${eventConfig.prizePool.display} prize pool`,
+  `${eventConfig.prizePool.display} cash prize pool`,
   "Doom is coming",
   "16 hours · one night",
 ];

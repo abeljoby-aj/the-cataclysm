@@ -20,7 +20,8 @@ export const eventConfig = {
   participantFee: 400,
   expectedTeams: 50,
   registrationUrl: "https://konfhub.com/the-cataclysm",
-  prizePool: { amount: 50000, display: "₹50,000", short: "50K" },
+  prizePool: { amount: 30000, display: "₹30,000", short: "30K" },
+  sponsorRewards: { estimatedMin: 60000, estimatedMax: 70000, display: "₹60,000–₹70,000", short: "₹60K–₹70K" },
   instagramUrl: "https://www.instagram.com/ox.c0de/",
   logo: "/assets/branding/oxcode-logo.jpg",
   copyright: "2026 OxCode Club × Multimedia Club NIMIT. All rights reserved.",
@@ -29,6 +30,33 @@ export const eventConfig = {
       "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d454.39433312073885!2d76.37294636560577!3d10.246737924184611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1792260897017!5m2!1sen!2sin",
     linkUrl: "https://www.google.com/maps?q=10.246737924184611,76.37294636560577",
   },
+} as const;
+
+export const sponsors = [
+  {
+    id: "cyberdefenders",
+    name: "CyberDefenders",
+    logo: "/assets/sponsors/cyberdefenders.png",
+  },
+  {
+    id: "thundercipher",
+    name: "ThunderCipher",
+    logo: "/assets/sponsors/thundercipher.png",
+  },
+] as const;
+
+export const proAccessPrizes = [
+  { position: "1st-place team", months: 3 },
+  { position: "2nd-place team", months: 2 },
+  { position: "3rd-place team", months: 1 },
+] as const;
+
+export const proAccessRecipient = "One subscription per team, awarded to that team’s highest-scoring member.";
+
+export const examBenefits = {
+  freeVouchers: 12,
+  exam: "TC-VAPT",
+  discountPercent: 66,
 } as const;
 
 export interface ScheduleItem {
@@ -50,7 +78,7 @@ export const faqs = [
   { q: "Are meals included?", a: "Yes. Meals are included with registration during the competition." },
   { q: "Is it open to all departments?", a: "Yes! Students from any department or academic background can participate." },
   { q: "What is the registration deadline?", a: "The registration deadline is 12 Nov 2026." },
-  { q: "What is the prize pool?", a: "The prize pool is ₹50,000." },
+  { q: "What rewards can I receive?", a: `The cash prize pool is ${eventConfig.prizePool.display}, with an estimated ${eventConfig.sponsorRewards.display} in additional non-cash rewards and discounts. Each member of the top 3 teams receives one free ${examBenefits.exam} exam voucher (${examBenefits.freeVouchers} vouchers total across all three teams). Each of these teams also receives one Pro training subscription for its highest-scoring member: 3 months for the 1st-place team, 2 months for the 2nd-place team, and 1 month for the 3rd-place team. All registered participants get ${examBenefits.discountPercent}% off the ${examBenefits.exam} exam. The estimated value of non-cash rewards and discounts is separate from the cash prize pool.` },
   { q: "How long is the competition?", a: "CATACLYSM is a 16-hour CTF competition." },
   { q: "Is spot registration available?", a: "No. Registration must be completed before the deadline." },
   { q: "Who can participate?", a: "Everyone! Students from different institutions and academic backgrounds are welcome." },

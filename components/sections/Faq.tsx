@@ -5,7 +5,7 @@ export default function Faq() {
   return (
     <section id="faq" className="section faq" data-mark="FAQ" aria-labelledby="faq-title">
       <Reveal className="section-head">
-        <p className="mono eyebrow"><span className="dot" aria-hidden="true" /> 07 / FAQ</p>
+        <p className="mono eyebrow"><span className="dot" aria-hidden="true" /> 08 / FAQ</p>
         <h2 id="faq-title">Before you ask.</h2>
       </Reveal>
       <Reveal>

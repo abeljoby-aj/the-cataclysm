@@ -12,7 +12,7 @@ export default function RegistrationSection() {
   return (
     <section id="register" className="section register" data-mark="DOOM" aria-labelledby="register-title">
       <Reveal className="register-card">
-        <p className="mono eyebrow"><span className="dot" aria-hidden="true" /> 05 / Registration</p>
+        <p className="mono eyebrow"><span className="dot" aria-hidden="true" /> 06 / Registration</p>
         <h2 id="register-title">Enter the breach</h2>
         <p className="fee">
           <span className="fee-num">₹{eventConfig.participantFee}</span>

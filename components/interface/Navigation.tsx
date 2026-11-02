@@ -10,9 +10,10 @@ export default function Navigation() {
       </a>
       <nav aria-label="Primary">
         <ul>
-          <li><a href="#prize">Prize</a></li>
-          <li><a href="#schedule">Schedule</a></li>
-          <li><a href="#venue">Venue</a></li>
+          <li><a href="#prize">Prizes</a></li>
+          <li><a href="#sponsors">Sponsors</a></li>
+          <li className="nav-secondary"><a href="#schedule">Schedule</a></li>
+          <li className="nav-secondary"><a href="#venue">Venue</a></li>
           <li><a className="nav-cta" href="#register">Register</a></li>
         </ul>
       </nav>

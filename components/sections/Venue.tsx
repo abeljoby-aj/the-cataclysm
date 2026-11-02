@@ -6,7 +6,7 @@ export default function Venue() {
     <section id="venue" className="section venue" data-mark="HQ" aria-labelledby="venue-title">
       <Reveal className="venue-grid">
         <div className="venue-info">
-          <p className="mono eyebrow"><span className="dot" aria-hidden="true" /> 06 / Venue</p>
+          <p className="mono eyebrow"><span className="dot" aria-hidden="true" /> 07 / Venue</p>
           <h2 id="venue-title">{eventConfig.venue}</h2>
           <p className="muted">{eventConfig.institution}</p>
           <ul className="venue-notes mono">

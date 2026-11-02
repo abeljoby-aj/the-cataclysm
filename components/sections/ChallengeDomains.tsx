@@ -105,7 +105,7 @@ export default function ChallengeDomains() {
   return (
     <section id="domains" className="section domains" data-mark="BREACH" aria-labelledby="domains-title">
       <Reveal className="section-head">
-        <p className="mono eyebrow"><span className="dot" aria-hidden="true" /> 01 / Expected challenge domains</p>
+        <p className="mono eyebrow"><span className="dot" aria-hidden="true" /> 03 / Expected challenge domains</p>
         <h2 id="domains-title">What you may be up against</h2>
         <p className="muted">These areas are tentative and may change before the event.</p>
       </Reveal>

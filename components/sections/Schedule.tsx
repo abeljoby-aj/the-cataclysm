@@ -5,7 +5,7 @@ export default function Schedule() {
   return (
     <section id="schedule" className="section schedule" data-mark="T-MINUS" aria-labelledby="schedule-title">
       <Reveal className="section-head">
-        <p className="mono eyebrow"><span className="dot" aria-hidden="true" /> 04 / Schedule</p>
+        <p className="mono eyebrow"><span className="dot" aria-hidden="true" /> 05 / Schedule</p>
         <h2 id="schedule-title">The night, hour by hour</h2>
       </Reveal>
       <Reveal className="sched-layout">

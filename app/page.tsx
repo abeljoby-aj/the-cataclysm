@@ -4,6 +4,7 @@ import ChallengeDomains from "@/components/sections/ChallengeDomains";
 import EventDetails from "@/components/sections/EventDetails";
 import RegistrationSection from "@/components/sections/RegistrationSection";
 import PrizePool from "@/components/sections/PrizePool";
+import Sponsors from "@/components/sections/Sponsors";
 import Schedule from "@/components/sections/Schedule";
 import Venue from "@/components/sections/Venue";
 import Faq from "@/components/sections/Faq";
@@ -19,8 +20,9 @@ export default function Page() {
       <main id="main">
         <OpeningSequence />
         <Ticker />
-        <ChallengeDomains />
         <PrizePool />
+        <Sponsors />
+        <ChallengeDomains />
         <EventDetails />
         <Schedule />
         <RegistrationSection />

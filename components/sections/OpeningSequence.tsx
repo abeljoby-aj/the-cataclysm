@@ -69,12 +69,12 @@ export default function OpeningSequence() {
             <dd>{formatLongDate(startDate)} · {formatTime(startDate)}</dd>
           </div>
           <div>
-            <dt>Prize pool</dt>
+            <dt>Cash prize pool</dt>
             <dd className="hl">{eventConfig.prizePool.display}</dd>
           </div>
           <div>
             <dt>Venue</dt>
-            <dd>{eventConfig.venue}</dd>
+            <dd>{eventConfig.institution}, Pongam</dd>
           </div>
         </dl>
         <div className="cta-row">
