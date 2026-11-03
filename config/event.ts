@@ -34,7 +34,7 @@ export const eventConfig = {
 
 export const mainCashSponsor = {
   name: "AMT",
-  logo: "/assets/sponsors/amt-logo.png",
+  logo: "/assets/sponsors/amt-logo-black.png",
   role: "Main cash sponsor",
   description: "AMT is a global software engineering company specialising in custom product development, AI and cloud solutions.",
 } as const;

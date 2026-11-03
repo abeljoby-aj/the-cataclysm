@@ -13,7 +13,7 @@ export default function Sponsors() {
       </Reveal>
       <Reveal className="main-cash-sponsor">
         <div className="main-sponsor-logo-panel">
-          <Image src={mainCashSponsor.logo} alt="AMT logo — Let’s build IT together" width={1448} height={571} className="main-sponsor-logo" />
+          <Image src={mainCashSponsor.logo} alt="AMT logo — Let’s build IT together" width={508} height={263} className="main-sponsor-logo" />
         </div>
         <div className="main-sponsor-copy">
           <p className="mono main-sponsor-role">{mainCashSponsor.role}</p>

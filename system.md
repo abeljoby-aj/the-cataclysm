@@ -187,7 +187,7 @@ Each top-three team receives one Pro award for its highest-scoring member. Do no
 
 Keep these sponsor-to-benefit mappings as internal documentation. Participant-facing reward descriptions must explain the reward, eligible recipient, and total allocation without sponsor names. Do not imply that 12 vouchers are awarded per member or per team. The latest simplification passed the production build and 12 relevant Playwright checks across all six viewport configurations; the unchanged WebGL check was not repeated for this content update.
 
-The 3 November AMT update passed the production build and 12 relevant Playwright checks across all six viewport configurations. The poster retains the readable minimal design, the full Pongam venue, no registration deadline, and a QR linking to `https://cataclysm.oxcode.org/`. AMT's larger logo/one-liner placement sits above the prize highlights; the other sponsor logos remain below. Current exports are in `output/poster/the-cataclysm-amt.png` and `output/pdf/the-cataclysm-amt-a3.pdf`.
+The 3 November AMT update passed the production build and 12 relevant Playwright checks across all six viewport configurations. The poster retains the readable minimal design, the full Pongam venue, no registration deadline, and a QR linking to `https://cataclysm.oxcode.org/`. AMT appears only within the poster's Our Sponsors section, with a larger logo, main cash sponsor label, and supplied one-liner above the smaller supporting sponsor logos. Current exports are in `output/poster/the-cataclysm-amt-sponsors.png` and `output/pdf/the-cataclysm-amt-sponsors-a3.pdf`.
 
 **Registration deadline:** 12 November 2026, as stated in the FAQ; no cutoff time is specified.
 
