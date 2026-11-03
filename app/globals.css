@@ -192,6 +192,14 @@ ul { list-style: none; }
 .sponsors { scroll-margin-top: 4rem; }
 .sponsors-heading { display: flex; justify-content: space-between; align-items: flex-end; gap: 2rem; margin-bottom: 2.5rem; }
 .sponsors-heading > p { max-width: 24rem; font-size: 0.95rem; }
+.main-cash-sponsor { display: grid; grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.3fr); align-items: center; gap: clamp(1.5rem, 4vw, 4rem); padding: clamp(1.5rem, 4vw, 3rem); margin-bottom: 1.5rem; border: 1px solid rgba(242, 205, 132, 0.4); border-top: 3px solid var(--gold); background: radial-gradient(ellipse at top right, rgba(242, 205, 132, 0.07), transparent 75%), #0b100d; }
+.main-sponsor-logo-panel { background: #fff; padding: clamp(1rem, 2vw, 1.5rem); border-radius: 0.25rem; min-width: 0; }
+.main-sponsor-logo { display: block; width: 100%; height: auto; }
+.main-sponsor-copy { min-width: 0; }
+.main-sponsor-role { color: var(--gold); font-size: 0.72rem; margin-bottom: 0.6rem; }
+.main-sponsor-copy h3 { font-family: var(--font-display), sans-serif; font-size: clamp(2.5rem, 5vw, 4rem); line-height: 1.1; }
+.main-sponsor-support { color: var(--gold); font-size: 1rem; margin: 0.6rem 0 1rem; }
+.main-sponsor-description { color: #c3cfc7; font-size: clamp(0.95rem, 1.4vw, 1.1rem); line-height: 1.7; max-width: 39rem; }
 .sponsor-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; }
 .sponsor-card { min-width: 0; padding: clamp(1.3rem, 3vw, 2.5rem); background: linear-gradient(135deg, #101914, #080d0a); border: 1px solid var(--line); border-top: 2px solid var(--sponsor-color); }
 .sponsor-cyberdefenders { --sponsor-color: #819bff; }
@@ -300,6 +308,8 @@ ul { list-style: none; }
   .sponsors-heading { display: block; }
   .sponsors-heading > p { margin-top: 1.2rem; }
   .sponsor-grid { grid-template-columns: 1fr; }
+  .main-cash-sponsor { grid-template-columns: 1fr; }
+  .main-sponsor-logo-panel { max-width: 25rem; width: 100%; }
   .domain, .domain-rev, .domain-osint, .domain-forensics, .domain-misc { grid-column: span 6; min-height: 15rem; }
   .details-body { grid-template-columns: 1fr; }
   .venue-grid { grid-template-columns: 1fr; }

@@ -1,6 +1,6 @@
 # THE CATACLYSM — CURRENT PROJECT CONTEXT AND CREATIVE BRIEF
 
-Last updated: 2 November 2026 (Asia/Kolkata).
+Last updated: 3 November 2026 (Asia/Kolkata).
 
 ## CURRENT IMPLEMENTATION — READ FIRST
 
@@ -34,7 +34,7 @@ This update reflects local source files, not independent verification of organiz
 | `lib/stage.ts` | Shared scene state, intro timeline, and click pulses |
 | `lib/time.ts`, `lib/random.ts` | IST formatting, event phases/countdown helpers, and seeded randomness |
 | `public/assets/branding/` | OxCode and Multimedia Club JPG logos; `app/icon.jpg` supplies the app icon |
-| `public/assets/sponsors/` | CyberDefenders PNG exported from the supplied PSD and ThunderCipher PNG from the supplied JPEG |
+| `public/assets/sponsors/` | AMT PNG with tagline exported from the supplied PDF, CyberDefenders PNG exported from the supplied PSD, and ThunderCipher PNG from the supplied JPEG |
 | `next.config.ts` | Static export, unoptimized images, strict mode, and Three.js transpilation |
 | `wrangler.jsonc`, `src/index.ts` | Cloudflare Worker/static assets configuration and legacy-host redirect |
 | `playwright.config.ts`, `tests/e2e/website.spec.ts` | Chromium viewport projects, production-export test server, browser checks, screenshots, and failure traces |
@@ -47,7 +47,7 @@ The design uses near-black (`#050706`), emerald (`#35e08a`), gunmetal, muted gre
 
 The page order is: fixed navigation → opening hero → ticker → prizes and rewards → sponsors → expected challenge domains → event details/countdown → schedule → registration → venue/map → FAQ → contacts → footer. Navigation uses in-page anchors, including direct prize and sponsor links retained on narrow layouts.
 
-Prizes and rewards use a warm gold accent (`#f2cd84`) to stand out from the emerald visual system. The prize section separates the ₹30,000 cash pool from ₹60,000–₹70,000 estimated additional non-cash rewards and discounts. It groups rewards by recipient: the top 3 teams and all registered participants. Sponsor names appear only in Our Sponsors, which shows names and logos without benefit descriptions. The home-page rewards badge and sponsor ticker entries have been removed. The sponsor showcase preserves each supplied logo's colors and lists CyberDefenders first, then ThunderCipher.
+Prizes and rewards use a warm gold accent (`#f2cd84`) to stand out from the emerald visual system. The prize section separates the ₹30,000 cash pool from ₹60,000–₹70,000 estimated additional non-cash rewards and discounts. It groups rewards by recipient: the top 3 teams and all registered participants. Our Sponsors features AMT as the main cash sponsor in a larger gold-bordered panel with its original logo/tagline on white, the supplied company description, and acknowledgment of its support for the cash pool. CyberDefenders and ThunderCipher remain in smaller name/logo cards below. The home section has no AMT badge, as requested. The former home-page rewards badge and sponsor ticker entries remain removed.
 
 The hero contains a procedural fractured metallic aperture, an animated emerald shader membrane, a distant armored mask silhouette, instanced debris, dust, fog, and light shafts. High quality adds bloom, flash-driven chromatic aberration, noise, and vignette. The backdrop uses original geometry rather than a supplied character model.
 
@@ -179,12 +179,15 @@ The following information is currently represented in `config/event.ts` and the 
 
 **Sponsors and benefits:**
 
+- AMT: main cash sponsor, supporting the prize pool. Keep the ₹30,000 cash pool amount unchanged unless the organizer supplies a new amount. Use its original blue-and-green logo with the tagline from the supplied PDF, displayed on white. Supplied one-liner: "AMT is a global software engineering company specialising in custom product development, AI and cloud solutions." Give AMT priority above the other sponsors on the website and poster. AMT's details are centralized in `mainCashSponsor` in `config/event.ts`.
 - CyberDefenders: Pro access goes to the highest-scoring member of each of the top three teams: 3 months for the 1st-place team, 2 months for the 2nd-place team, and 1 month for the 3rd-place team. The supplied PSD provides its blue-and-white logo.
 - ThunderCipher: one free TC-VAPT exam voucher per member of the top 3 teams, with 12 vouchers total shared across all three teams, plus a 66% discount for all registered participants. The supplied logo is the cyan TC mark on black.
 
 Each top-three team receives one Pro award for its highest-scoring member. Do not infer cash award splits, redemption deadlines, or extra sponsor conditions; these were not supplied.
 
 Keep these sponsor-to-benefit mappings as internal documentation. Participant-facing reward descriptions must explain the reward, eligible recipient, and total allocation without sponsor names. Do not imply that 12 vouchers are awarded per member or per team. The latest simplification passed the production build and 12 relevant Playwright checks across all six viewport configurations; the unchanged WebGL check was not repeated for this content update.
+
+The 3 November AMT update passed the production build and 12 relevant Playwright checks across all six viewport configurations. The poster retains the readable minimal design, the full Pongam venue, no registration deadline, and a QR linking to `https://cataclysm.oxcode.org/`. AMT's larger logo/one-liner placement sits above the prize highlights; the other sponsor logos remain below. Current exports are in `output/poster/the-cataclysm-amt.png` and `output/pdf/the-cataclysm-amt-a3.pdf`.
 
 **Registration deadline:** 12 November 2026, as stated in the FAQ; no cutoff time is specified.
 

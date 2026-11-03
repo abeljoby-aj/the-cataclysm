@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Reveal from "@/components/interface/Reveal";
-import { sponsors } from "@/config/event";
+import { mainCashSponsor, sponsors } from "@/config/event";
 
 export default function Sponsors() {
   return (
@@ -9,6 +9,17 @@ export default function Sponsors() {
         <div>
           <p className="mono eyebrow"><span className="dot" aria-hidden="true" /> 02 / Our sponsors</p>
           <h2 id="sponsors-title">Our sponsors</h2>
+        </div>
+      </Reveal>
+      <Reveal className="main-cash-sponsor">
+        <div className="main-sponsor-logo-panel">
+          <Image src={mainCashSponsor.logo} alt="AMT logo — Let’s build IT together" width={1448} height={571} className="main-sponsor-logo" />
+        </div>
+        <div className="main-sponsor-copy">
+          <p className="mono main-sponsor-role">{mainCashSponsor.role}</p>
+          <h3>{mainCashSponsor.name}</h3>
+          <p className="main-sponsor-support">Supporting the cash prize pool.</p>
+          <p className="main-sponsor-description">{mainCashSponsor.description}</p>
         </div>
       </Reveal>
       <div className="sponsor-grid">

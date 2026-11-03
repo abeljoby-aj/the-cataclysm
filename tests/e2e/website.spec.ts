@@ -8,6 +8,7 @@ test("cash and sponsor rewards are clear, logos load, and layouts fit", async ({
   await expect(page.getByRole("heading", { level: 1 })).toHaveAccessibleName("THE CATACLYSM");
   await expect(page.locator(".hero-reward-callout")).toHaveCount(0);
   await expect(page.locator("#top")).not.toContainText("New sponsor rewards");
+  await expect(page.locator(".hero-main-sponsor")).toHaveCount(0);
   await page.screenshot({ path: testInfo.outputPath("hero.png") });
 
   await page.getByRole("navigation", { name: "Primary" }).getByRole("link", { name: "Prizes", exact: true }).click();
@@ -33,6 +34,12 @@ test("cash and sponsor rewards are clear, logos load, and layouts fit", async ({
   await page.getByRole("navigation", { name: "Primary" }).getByRole("link", { name: "Sponsors", exact: true }).click();
   await expect(page).toHaveURL(/#sponsors$/);
   const sponsors = page.locator("#sponsors");
+  const mainSponsor = sponsors.locator(".main-cash-sponsor");
+  await expect(mainSponsor).toContainText("Main cash sponsor");
+  await expect(mainSponsor).toContainText("Supporting the cash prize pool.");
+  await expect(mainSponsor).toContainText("AMT is a global software engineering company specialising in custom product development, AI and cloud solutions.");
+  const amtLogo = mainSponsor.getByRole("img", { name: /AMT logo/ });
+  await expect.poll(() => amtLogo.evaluate((image: HTMLImageElement) => image.complete && image.naturalWidth > 0)).toBe(true);
   await expect(sponsors.locator(".sponsor-description")).toHaveCount(0);
   await expect(sponsors).not.toContainText(/vouchers|subscription|66%/);
   await expect(sponsors.getByRole("heading", { level: 2 })).toBeInViewport();
@@ -45,7 +52,7 @@ test("cash and sponsor rewards are clear, logos load, and layouts fit", async ({
   await sponsors.screenshot({ path: testInfo.outputPath("sponsors.png"), style: ".nav, .skip-link { visibility: hidden !important; }" });
 
   // Check actual content bounds as well as document width, since overflow-x:hidden can mask clipping.
-  const overflow = await page.locator(".nav, .title-word, .reward-total, .reward-amount, .podium-rewards, .reward-group-title, .sponsor-card, .sponsor-brand h3").evaluateAll((elements) =>
+  const overflow = await page.locator(".nav, .title-word, .main-cash-sponsor, .main-sponsor-logo, .main-sponsor-description, .reward-total, .reward-amount, .podium-rewards, .reward-group-title, .sponsor-card, .sponsor-brand h3").evaluateAll((elements) =>
     elements.filter((element) => {
       const rect = element.getBoundingClientRect();
       return rect.left < -1 || rect.right > window.innerWidth + 1;
