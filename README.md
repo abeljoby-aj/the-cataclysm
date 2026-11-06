@@ -41,6 +41,7 @@ Build command `npm run build`, output directory `out`.
 
 ## Notes
 
+- Meta Pixel `1681669726675187` is installed in the shared layout head and sends `PageView` once per document load. A hidden image supplies the no-JavaScript fallback. In-page section navigation does not trigger extra PageViews. Browser tests stub Meta requests so QA does not populate live analytics. Deploy the exported `out/` build before validating real events in Meta Events Manager.
 - Mobile/low-power devices use the low tier (no post-processing, fewer particles).
 - `prefers-reduced-motion` skips the intro; without WebGL a CSS fallback is shown. `?webgl=off` forces the fallback.
 - Challenge domains are tentative and labelled as expected.

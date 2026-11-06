@@ -1,5 +1,10 @@
 import { expect, test } from "@playwright/test";
 
+test.beforeEach(async ({ page }) => {
+  // Browser QA must not add synthetic visits to the live Meta Pixel.
+  await page.route("https://connect.facebook.net/**", (route) => route.fulfill({ contentType: "application/javascript", body: "" }));
+});
+
 test("cash and sponsor rewards are clear, logos load, and layouts fit", async ({ page }, testInfo) => {
   const errors: string[] = [];
   page.on("pageerror", (error) => errors.push(error.message));
